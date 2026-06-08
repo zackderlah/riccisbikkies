@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useCart } from "@/context/CartContext";
-import AnimatedLogo from "./AnimatedLogo";
+import Logo from "./Logo";
 
 const navLinks = [
   { href: "/shop", label: "Shop" },
@@ -63,10 +63,10 @@ export default function Header() {
         <div className="wrapper py-6 flex justify-between items-center">
           <Link
             href="/"
-            aria-label="riccis bikkies — home"
-            className="group font-display text-[1.75rem] font-semibold text-text-main no-underline tracking-[-0.01em]"
+            aria-label="Ricci's Bikkies — home"
+            className="text-text-main no-underline"
           >
-            <AnimatedLogo text="riccis bikkies" />
+            <Logo className="text-[2.25rem]" />
           </Link>
 
           <nav className="hidden md:flex gap-12">

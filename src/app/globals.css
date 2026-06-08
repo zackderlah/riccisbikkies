@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Just Left Hand";
+  src: url("/fonts/just-left-hand.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --clr-bg: #f9f8f6;
   --clr-text-main: #382218;
@@ -7,6 +15,7 @@
   --clr-muted: #cdbea7;
   --clr-line: rgba(56, 34, 24, 0.15);
   --font-display: var(--font-cormorant);
+  --font-logo: "Just Left Hand", cursive;
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains);
   --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -20,8 +29,15 @@
   --color-line: var(--clr-line);
   --color-surface: #ebe7e0;
   --font-display: var(--font-cormorant);
+  --font-logo: "Just Left Hand", cursive;
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains);
+}
+
+.font-logo {
+  font-family: var(--font-logo);
+  font-weight: 400;
+  font-style: italic;
 }
 
 * {

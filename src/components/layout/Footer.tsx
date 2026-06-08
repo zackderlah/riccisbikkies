@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -7,8 +8,8 @@ export default function Footer() {
       <div className="wrapper grid-12 py-16">
         {/* Brand — cols 1–4 */}
         <div className="col-span-4 flex flex-col gap-4">
-          <h4 className="font-display text-[1.75rem] font-semibold tracking-[-0.01em]">
-            riccis bikkies
+          <h4>
+            <Logo className="text-[1.65rem]" />
           </h4>
           <p className="text-sm opacity-70">
             Artisan savoury biscuits crafted in the heart of the Yarra Valley,
