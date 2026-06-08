@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --clr-bg: #f9f8f6;
+  --clr-text-main: #382218;
+  --clr-accent: #b85331;
+  --clr-muted: #cdbea7;
+  --clr-line: rgba(56, 34, 24, 0.15);
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+  --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--clr-bg);
+  --color-text-main: var(--clr-text-main);
+  --color-accent: var(--clr-accent);
+  --color-muted: var(--clr-muted);
+  --color-line: var(--clr-line);
+  --color-surface: #ebe7e0;
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--clr-bg);
+  color: var(--clr-text-main);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+.serif {
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+/* Original design type scale */
+.text-xl {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+.text-lg {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1;
+}
+
+.text-md {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.text-sm {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.text-mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--clr-text-main);
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .text-xl {
+    font-size: 3rem;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* 12-column grid matching original design */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .grid-12 {
+    display: flex;
+    flex-direction: column;
+  }
 }
