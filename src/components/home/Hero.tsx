@@ -10,7 +10,7 @@ export default function Hero() {
         <h1 className="text-xl">
           Savoury craft,
           <br />
-          <span className="italic">baked</span> in the
+          <span className="text-accent">baked</span> in the
           <br />
           Yarra Valley.
         </h1>

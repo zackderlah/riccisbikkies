@@ -54,8 +54,8 @@ export default async function ProductPage({
       <div className="grid grid-cols-2 gap-16 max-[900px]:grid-cols-1">
         {/* Image */}
         <div
-          className={`aspect-[4/5] overflow-hidden relative ${
-            product.cutout ? "" : "bg-surface border border-line"
+          className={`aspect-[4/5] overflow-hidden relative rounded-lg border border-line ${
+            product.cutout ? "" : "bg-surface"
           }`}
         >
           <Image

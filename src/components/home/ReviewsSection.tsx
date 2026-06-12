@@ -125,20 +125,20 @@ export default function ReviewsSection() {
 
   return (
     <section className="py-32 border-t border-line">
-      <div className="flex flex-col gap-6 md:flex-row md:justify-between md:items-end mb-16">
-        <div>
-          <div className="text-mono mb-6">Kind Words</div>
-          <h2 className="text-lg max-w-[14ch]">Loved across the Valley & beyond.</h2>
-        </div>
+      <div className="flex flex-col items-center text-center gap-4 mb-16">
+        <div className="text-mono">Kind Words</div>
+        <h2 className="text-lg max-w-[20ch]">
+          Loved across the <span className="text-accent">Valley</span> & beyond.
+        </h2>
 
         <a
           href={GOOGLE_REVIEW_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-4 border border-line px-6 py-4 no-underline text-text-main transition-colors duration-300 hover:bg-surface self-start md:self-auto"
+          className="flex items-center gap-4 border border-line px-6 py-4 no-underline text-text-main transition-colors duration-300 hover:bg-surface mt-2"
         >
           <GoogleG className="w-7 h-7" />
-          <span className="flex flex-col">
+          <span className="flex flex-col items-start">
             <span className="flex items-center gap-2">
               <span className="font-display text-[1.75rem] leading-none">5.0</span>
               <Stars />

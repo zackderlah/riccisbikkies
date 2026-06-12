@@ -37,7 +37,7 @@ export default function ContactPage() {
         <h1 className="text-xl mb-8">
           Visit the
           <br />
-          <span className="italic">Yarra Valley</span>
+          <span className="text-accent">Yarra Valley</span>
         </h1>
         <p className="serif text-lg opacity-90 leading-[1.2] max-w-[44ch]">
           Tucked away in Healesville, our factory outlet is where every batch is

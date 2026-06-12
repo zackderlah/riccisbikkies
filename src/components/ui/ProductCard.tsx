@@ -20,8 +20,8 @@ export default function ProductCard({ product }: ProductCardProps) {
       <Link
         href={`/product/${product.id}`}
         aria-label={fullName}
-        className={`aspect-[4/5] overflow-hidden relative block ${
-          product.cutout ? "" : "bg-surface border border-line"
+        className={`aspect-[4/5] overflow-hidden relative block rounded-lg border border-line ${
+          product.cutout ? "" : "bg-surface"
         }`}
       >
         <Image
@@ -74,7 +74,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           type="button"
           disabled={product.soldOut}
           onClick={() => addItem(product)}
-          className="mt-4 bg-transparent border border-text-main text-text-main py-3 text-center font-sans text-[0.75rem] uppercase tracking-[0.05em] cursor-pointer transition-all duration-300 w-full hover:bg-text-main hover:text-bg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-text-main"
+          className="mt-4 bg-transparent border border-text-main text-text-main py-3 text-center font-sans text-[0.75rem] uppercase tracking-[0.05em] cursor-pointer transition-all duration-300 w-full rounded-lg hover:bg-text-main hover:text-bg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-text-main"
         >
           {product.soldOut ? "Out of Stock" : "Add to Cart"}
         </button>

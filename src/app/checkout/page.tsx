@@ -78,7 +78,7 @@ export default function CheckoutPage() {
         <h1 className="text-xl">
           Complete
           <br />
-          <span className="italic">Your Order</span>
+          <span className="text-accent">Your Order</span>
         </h1>
       </section>
 

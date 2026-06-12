@@ -14,7 +14,7 @@ export default function ShopPage() {
         <h1 className="text-xl mb-8">
           Our
           <br />
-          <span className="italic">Products</span>
+          <span className="text-accent">Products</span>
         </h1>
       </section>
 

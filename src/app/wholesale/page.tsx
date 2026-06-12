@@ -23,7 +23,7 @@ export default function WholesalePage() {
           <h1 className="text-xl mb-8">
             Wholesale
             <br />
-            <span className="italic">Enquiry</span>
+            <span className="text-accent">Enquiry</span>
           </h1>
           <p className="serif text-lg opacity-90 leading-[1.2] mb-8">
             Partner with Ricci&apos;s Bikkies for your cellar door, deli,

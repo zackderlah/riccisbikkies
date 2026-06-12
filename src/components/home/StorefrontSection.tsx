@@ -23,10 +23,10 @@ export default function StorefrontSection({
 
   return (
     <section className="py-16 pb-32 border-t border-line">
-      <div className="flex justify-between items-baseline mb-16">
+      <div className="flex flex-col items-center text-center gap-4 mb-16">
         <h2 className="text-lg">Our Favourites</h2>
         <span className="text-mono">
-          Displaying 1–{displayed.length} of {total} provisions
+          Displaying 1–{displayed.length} of {total} products
         </span>
       </div>
 

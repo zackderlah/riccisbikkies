@@ -13,7 +13,7 @@ export default function AddToCartControls({ product }: { product: Product }) {
       <button
         type="button"
         disabled
-        className="w-full bg-transparent border border-text-main text-text-main py-4 text-center font-sans text-[0.75rem] uppercase tracking-[0.05em] opacity-40 cursor-not-allowed"
+        className="w-full bg-transparent border border-text-main text-text-main py-4 text-center font-sans text-[0.75rem] uppercase tracking-[0.05em] opacity-40 cursor-not-allowed rounded-lg"
       >
         Out of Stock
       </button>
@@ -47,7 +47,7 @@ export default function AddToCartControls({ product }: { product: Product }) {
       <button
         type="button"
         onClick={() => addItem(product, quantity)}
-        className="flex-1 bg-text-main text-bg py-4 text-center font-sans text-[0.75rem] uppercase tracking-[0.05em] cursor-pointer transition-opacity duration-300 hover:opacity-85"
+        className="flex-1 bg-text-main text-bg py-4 text-center font-sans text-[0.75rem] uppercase tracking-[0.05em] cursor-pointer transition-opacity duration-300 hover:opacity-85 rounded-lg"
       >
         Add to Cart
       </button>
